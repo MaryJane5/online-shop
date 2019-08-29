@@ -1,0 +1,52 @@
+.container {
+    max-width: 1200px;
+    padding: 0 15px;
+    margin: 0 auto;
+    width: 100%;
+
+}
+
+.color-red {
+    color: $red;
+}
+
+.btn {
+    display: block;
+    max-width: 205px;
+    padding: $btn-padding;
+    font-size: $btn-font-size;
+    outline: none;
+    border: none;
+    color: $btn-color;
+    background-color: $btn-background;
+    line-height: 1;
+    font-weight: 500;
+    width: 100%;
+    text-align: center;
+
+    &.btn-red {
+        background-color: $red;
+    }
+
+    &.btn-green {
+        background-color: $green;
+    }
+
+    &.btn-small {
+    	width: 72px;
+    	font-size: 12px;
+    	padding: 10px 5px;
+    }
+}
+
+.btn-register, .btn-login  {
+	border-radius: 3px;
+
+}
+
+
+
+
+
+
+
