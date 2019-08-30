@@ -85,6 +85,7 @@
 
 // user-interface
 .user-interface {
+    position: relative;
     max-width: 145px;
     display: flex;
     margin: 0 30px 0 0;
@@ -93,6 +94,13 @@
         width: 35px;
         height: 35px;
         border-radius: 50%;
+    }
+
+    &.show {
+        .user-interface__popup {
+            opacity: 1;
+            visibility: visible;
+        }
     }
 }
 
@@ -124,6 +132,27 @@
     color: #222;
     opacity: 0.5;
 }
+
+.user-interface__popup {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    box-shadow: 0px 16px 20px 0px rgba(216, 216, 216, 0.75);
+    background-color: $white;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s;
+    margin: 32px 0 0;
+
+    &.show {
+        opacity: 1;
+        visibility: visible;
+    }
+
+}
+
+
 
 .btn-login-box {
     display: flex;
