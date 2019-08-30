@@ -3,15 +3,15 @@
 }
 
 .header-top {
-	display: flex;
-	justify-content: space-between;
-	width: 100%;
-	padding: 30px 0;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 30px 0;
 }
 
 .header-nav {
-	display: flex;
-	align-items: flex-start;
+    display: flex;
+    align-items: flex-start;
 }
 
 
@@ -25,6 +25,8 @@
 }
 
 .link-tell {
+    display: flex;
+    align-self: center;
     text-decoration: none;
     font-size: 15px;
     color: #546e7a;
@@ -74,6 +76,7 @@
 
 // user-interface
 .user-interface {
+    position: relative;
     max-width: 145px;
     display: flex;
     margin: 0 30px 0 0;
@@ -112,109 +115,122 @@
     font-size: 11px;
     color: #222;
     opacity: 0.5;
+    outline: none;
 }
 
 .btn-login-box {
-	display: flex;
+    display: flex;
 
-	a {
-		margin: 0 7px 0 0;
-	}
+    a {
+        margin: 0 7px 0 0;
+    }
+}
+
+// user-interface__popup
+.user-interface__popup {
+    position: absolute;
+    top: 100%;
+    margin: 32px 0 0;
+    left: 0;
+    width: 100%;
+    box-shadow: 0px 16px 20px 0px rgba(216, 216, 216, 0.75);
+    background-color: $white;
+    transition: all 0.3s;
+    opacity: 0;
+    visibility: hidden;
+    
+
+    &.show {
+        opacity: 1;
+        visibility: visible;
+    }
 }
 
 
-
-
-
-
-
-
-
-
 // burger-menu
-// .nav-opener {
-//     width: 35px;
-//     height: 35px;
-//     float: right;
-//     position: relative;
-//     margin: -30px 0;
-//     z-index: 9999;
+.nav-opener {
+    width: 35px;
+    height: 35px;
+    float: right;
+    position: relative;
+    margin: -30px 0;
+    z-index: 9999;
 
-//     @include media ('>=tablet') {
-//         display: none;
-//     }
+    @include media ('>=tablet') {
+        display: none;
+    }
 
-//     &:before,
-//     &:after,
-//     span {
-//         background: $white;
-//         position: absolute;
-//         top: 18px;
-//         left: 0;
-//         right: 0;
-//         height: 5px;
-//         transition: all .2s linear;
-//     }
+    &:before,
+    &:after,
+    span {
+        background: $white;
+        position: absolute;
+        top: 18px;
+        left: 0;
+        right: 0;
+        height: 5px;
+        transition: all .2s linear;
+    }
 
-//     &:before,
-//     &:after {
-//         content: '';
-//         top: 7px;
-//     }
+    &:before,
+    &:after {
+        content: '';
+        top: 7px;
+    }
 
-//     &:after {
-//         top: 29px;
-//     }
+    &:after {
+        top: 29px;
+    }
 
-//     .nav-active & {
+    .nav-active & {
 
-//         &:before,
-//         &:after {
-//             transform: rotate(45deg);
-//             top: 50%;
-//             left: 5px;
-//             right: 5px;
-//         }
+        &:before,
+        &:after {
+            transform: rotate(45deg);
+            top: 50%;
+            left: 5px;
+            right: 5px;
+        }
 
-//         &:after {
-//             transform: rotate(-45deg);
-//         }
+        &:after {
+            transform: rotate(-45deg);
+        }
 
-//         span {
-//             opacity: 0;
-//         }
-//     }
-// }
+        span {
+            opacity: 0;
+        }
+    }
+}
 
-// .nav-active {
-//     overflow: hidden;
-// }
+.nav-active {
+    overflow: hidden;
+}
 
-// .nav-drop {
-//     @include animate(opacity visibility);
+.nav-drop {
+    @include animate(opacity visibility);
 
-//     @include media ('<tablet') {
-//         opacity: 0;
-//         visibility: hidden;
-//         overflow: hidden;
-//         position: fixed;
-//         top: 0;
-//         left: 0;
-//         right: 0;
-//         bottom: 0;
-//         z-index: 999;
-//         color: white;
-//         background: linear-gradient(to bottom, #e98382 0%, #ea8f83 45%, #ecbe82 82%, #efd889 99%, #efd889 99%);
-//     }
+    @include media ('<tablet') {
+        opacity: 0;
+        visibility: hidden;
+        overflow: hidden;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 999;
+        color: white;
+        background: linear-gradient(to bottom, #e98382 0%, #ea8f83 45%, #ecbe82 82%, #efd889 99%, #efd889 99%);
+    }
 
-//     .nav-active & {
-//         opacity: 1;
-//         visibility: visible;
-//     }
-// }
+    .nav-active & {
+        opacity: 1;
+        visibility: visible;
+    }
+}
 
-// .resize-active {
-//     .nav-drop {
-//         transition: none !important;
-//     }
-// }
+.resize-active {
+    .nav-drop {
+        transition: none !important;
+    }
+}
