@@ -1,5 +1,10 @@
 #header {
     background-color: $white;
+    padding: 0 50px 0 0;
+
+    @include media ('>=tablet') {
+        padding: 0
+    }
 }
 
 .header-top {
@@ -25,11 +30,15 @@
 }
 
 .link-tell {
-    display: flex;
-    align-self: center;
-    text-decoration: none;
-    font-size: 15px;
-    color: #546e7a;
+    display: none;
+
+    @include media ('>=desktop') {
+        display: flex;
+        align-self: center;
+        text-decoration: none;
+        font-size: 15px;
+        color: #546e7a;
+    }
 }
 
 // notification-box
@@ -76,7 +85,6 @@
 
 // user-interface
 .user-interface {
-    position: relative;
     max-width: 145px;
     display: flex;
     margin: 0 30px 0 0;
@@ -115,7 +123,6 @@
     font-size: 11px;
     color: #222;
     opacity: 0.5;
-    outline: none;
 }
 
 .btn-login-box {
@@ -126,23 +133,66 @@
     }
 }
 
-// user-interface__popup
-.user-interface__popup {
-    position: absolute;
-    top: 100%;
-    margin: 32px 0 0;
-    left: 0;
-    width: 100%;
-    box-shadow: 0px 16px 20px 0px rgba(216, 216, 216, 0.75);
-    background-color: $white;
-    transition: all 0.3s;
-    opacity: 0;
-    visibility: hidden;
-    
+// main-nav
+.main-nav {
+    @include media ('>=tablet') {
+        background-color: #263238;
+        padding: 10px 0;
+    }
+}
 
-    &.show {
-        opacity: 1;
-        visibility: visible;
+.nav-drop {
+    max-width: 1200px;
+    padding: 0 15px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+#nav {
+    @extend %listreset;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+
+    @include media ('>=tablet') {
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+
+    li {
+        margin: 0 0 20px;
+        font-weight: 500;
+        font-size: 14px;
+
+        @include media ('>=tablet') {
+            margin: 0 35px 0 0;
+        }
+
+        a {
+            display: block;
+            color: $white;
+
+            &:hover {
+                color: darken($white, 30%);
+            }
+        }
+    }
+
+}
+
+
+.nav-active {
+    .nav-opener {
+
+        &:before,
+        &:after,
+        span {
+            background-color: $white;
+        }
+
     }
 }
 
@@ -153,7 +203,7 @@
     height: 35px;
     float: right;
     position: relative;
-    margin: -30px 0;
+    margin: -72px -35px 0 0;
     z-index: 9999;
 
     @include media ('>=tablet') {
@@ -163,7 +213,7 @@
     &:before,
     &:after,
     span {
-        background: $white;
+        background: $dark-blue;
         position: absolute;
         top: 18px;
         left: 0;
@@ -220,7 +270,7 @@
         bottom: 0;
         z-index: 999;
         color: white;
-        background: linear-gradient(to bottom, #e98382 0%, #ea8f83 45%, #ecbe82 82%, #efd889 99%, #efd889 99%);
+        background: $dark-blue;
     }
 
     .nav-active & {
