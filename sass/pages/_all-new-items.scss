@@ -4,19 +4,19 @@ a {
 }
 
 .products-container {
-   width: 77%;
+   width: 81%;
 }
 
 // filet-menu
 .produts-select {
    width: 100%;
-   padding: 21px 75px 22px 39px;
+   padding: 21px 75px 22px 47px;
    border: 1PX solid $gray;
    background-color: $white;
    position: relative;
    color: #707070;
    font-size: 14px;
-   margin-bottom: 10px;
+   margin-bottom: 13px;
 
    .select-grid {
       position: absolute;
@@ -75,7 +75,7 @@ a {
 .dropdown-menu {
    position: absolute;
    display: block;
-   left: 89px;
+   left: 102px;
    top: 20px;
    z-index: 10;
 
@@ -136,7 +136,6 @@ a {
 
 // product-grid
 .products-grid {
-   padding: 17px 0;
 
    .row {
       display: flex;
@@ -167,7 +166,7 @@ a {
       }
 
       @include media ('>=widescreen') {
-         width: 25%;
+         width: 33.3%;
       }
    }
 }
@@ -194,7 +193,7 @@ a {
    }
 
    .product-description {
-      padding: 23px 52px 23px 23px;
+      padding: 20px 52px 23px 23px;
       position: relative;
       border-bottom: 1px solid $gray;
 
