@@ -24,12 +24,6 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-shopping-cart:before {
-  content: "\e90f";
-}
-.icon-user:before {
-  content: "\e900";
-}
 .icon-attention:before {
   content: "\e901";
 }
@@ -62,4 +56,19 @@
 }
 .icon-visible-open:before {
   content: "\e90e";
+}
+.icon-shopping-cart:before {
+  content: "\e90f";
+}
+.icon-user:before {
+  content: "\e900";
+}
+.icon-star-full:before {
+  content: "\e90d";
+}
+.icon-grid:before {
+  content: "\e902";
+}
+.icon-th-list:before {
+  content: "\e90a";
 }
