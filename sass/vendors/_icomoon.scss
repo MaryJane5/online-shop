@@ -24,11 +24,17 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-shopping-cart:before {
-  content: "\e90f";
+.icon-paper-plane:before {
+  content: "\e910";
 }
-.icon-user:before {
-  content: "\e900";
+.icon-pinterest-square:before {
+  content: "\e902";
+}
+.icon-youtube-square:before {
+  content: "\e90a";
+}
+.icon-twitter-square:before {
+  content: "\e90d";
 }
 .icon-attention:before {
   content: "\e901";
@@ -62,4 +68,22 @@
 }
 .icon-visible-open:before {
   content: "\e90e";
+}
+.icon-shopping-cart:before {
+  content: "\e90f";
+}
+.icon-user:before {
+  content: "\e900";
+}
+.icon-phone:before {
+  content: "\e942";
+}
+.icon-location2:before {
+  content: "\e948";
+}
+.icon-facebook2:before {
+  content: "\ea91";
+}
+.icon-linkedin:before {
+  content: "\eac9";
 }

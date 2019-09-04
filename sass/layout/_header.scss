@@ -1,4 +1,5 @@
 #header {
+    position: relative;
     background-color: $white;
     padding: 0 50px 0 0;
 
@@ -8,21 +9,35 @@
 }
 
 .header-top {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
     padding: 30px 0;
+
+    @include media ('>=tablet') {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
 }
 
 .header-nav {
     display: flex;
     align-items: flex-start;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    @include media ('>=tablet') {
+        justify-content: flex-start;
+    }
 }
 
 
 .logo {
     display: block;
     max-width: 140px;
+    margin: 0 auto 30px;
+
+    @include media ('>=tablet') {
+        margin: 0;
+    }
 
     img {
         width: 100%;
@@ -32,7 +47,7 @@
 .link-tell {
     display: none;
 
-    @include media ('>=desktop') {
+    @include media ('>=widescreen') {
         display: flex;
         align-self: center;
         text-decoration: none;
@@ -47,8 +62,12 @@
 
     @extend %listreset;
 
-    display: flex;
-    margin: 0 29px;
+    display: none;
+    
+    @include media ('>=600px') {
+        display: flex;
+        margin: 0 29px;
+    }
 
     li {
         margin: 0 10px 0 0;
@@ -72,13 +91,25 @@
             width: 20px;
             height: 20px;
             border-radius: 50%;
-            background-color: $red;
+            background-color: #fcb322;
             color: $white;
             top: -8px;
             right: -6px;
             line-height: 20px;
             text-align: center;
             font-size: 11px;
+        }
+    }
+
+    .icon-shopping-cart {
+        &:after {
+            background-color: $green;
+        }
+    }
+
+    .icon-notification {
+        &:after {
+            background-color: #c06d25;
         }
     }
 }
@@ -88,7 +119,12 @@
     position: relative;
     max-width: 145px;
     display: flex;
-    margin: 0 30px 0 0;
+    justify-content: center;
+
+    @include media ('>=600px') {
+        justify-content: flex-start;
+        margin: 0 30px 0 0;
+    }
 
     img {
         width: 35px;
@@ -131,6 +167,8 @@
     font-size: 11px;
     color: #222;
     opacity: 0.5;
+    background-color: transparent;
+    outline: none;
 }
 
 .user-interface__popup {
@@ -156,6 +194,15 @@
 
 .btn-login-box {
     display: flex;
+    justify-content: center;
+    margin: 30px 0 0;
+    width: 100%;
+
+    @include media ('>=600px') {
+        margin: 0;
+        justify-content: flex-start;
+        width: auto;
+    }
 
     a {
         margin: 0 7px 0 0;
@@ -230,9 +277,9 @@
 .nav-opener {
     width: 35px;
     height: 35px;
-    float: right;
-    position: relative;
-    margin: -72px -35px 0 0;
+    position: absolute;
+    right: 20px;
+    top: 25px;
     z-index: 9999;
 
     @include media ('>=tablet') {

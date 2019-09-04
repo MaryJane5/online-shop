@@ -1,0 +1,175 @@
+#footer {
+    background-color: $dark-blue;
+    padding: 30px 10px;
+}
+
+.footer__main-content {
+    .container {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    h3 {
+        position: relative;
+        color: $white;
+        font-weight: 700;
+        padding: 0 0 15px;
+        margin: 0 0 15px;
+
+        @include media ('>=tablet') {
+            font-size: 22px;
+            padding: 0 0 25px;
+            margin: 0 0 25px;
+        }
+
+        &:after {
+            content: " ";
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 52px;
+            height: 4px;
+            background-color: $green;
+        }
+    }
+}
+
+.about-company {
+	font-size: 15px;
+	color: #b7c3c8;
+    @include media ('>=tablet') {
+        width: calc(29% - 80px);
+        margin: 0 80px 0 0;
+    }
+}
+
+.footer__links {
+    @include media ('>=tablet') {
+        width: 71%;
+    }
+}
+
+.footer__links-row {
+    @include media ('>=tablet') {
+        display: flex;
+        margin: 0 -10px;
+    }
+}
+
+.footer__links-col {
+    @include media ('>=tablet') {
+        width: 33.31%;
+        padding: 0 10px;
+
+    }
+}
+
+// company-info
+.company-info {
+	@extend %listreset;
+
+	li {
+		position: relative;
+		margin: 0 0 15px;
+		font-size: 14px;
+		color: $white;
+		padding: 0 0 0 30px;
+
+		&:hover {
+			a {
+				color: darken($white, 30%);
+			}
+		}
+
+		i {
+			position: absolute;
+			left: 0;
+			top: 0;
+			color: $green;
+			font-size: 15px;
+		}
+
+		a {
+			color: $white;
+		}
+
+		address {
+			font-style: normal;
+		}
+	}
+}
+
+ul:not([class]):not([id]) {
+	@extend %listreset;
+
+	li {
+		position: relative;
+		margin: 0 0 10px;
+		padding: 0 0 0 20px;
+
+		&:before {
+			content: "\e904";
+			font-family: 'icomoon';
+			position: absolute;
+			left: 0;
+			top: 50%;
+			color: $green;
+			font-size: 12px;
+			transform: translateY(-50%) rotate(-180deg);
+		}
+
+		&:hover {
+			a {
+				color: darken($white, 30%);
+			}
+		}
+
+		a {
+			color: #b7c3c8;
+		}
+	}
+}
+
+// form-newsletter
+.form-newsletter {
+	max-width: 257px;
+
+	label {
+		font-size: 20px;
+		color: $white;
+		margin: 0 0 15px;
+		font-weight: 700;
+		display: block;
+	}
+
+	.input-outer {
+		display: flex;
+
+	}
+
+	input[type=submit] {
+		width: 42px;
+		background-color: $green;
+		position: relative;
+		font-size: 0;
+
+		&:before {
+			font-size: 20px;
+			color: #fff;
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
