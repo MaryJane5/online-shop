@@ -93,6 +93,21 @@ a {
       padding: 5px;
    }
 
+   &.open {
+      .title {
+         display: inline-block;
+         width: 100px;
+         height: 20px;
+         font-size: 15px;
+         line-height: 20px;
+         cursor: pointer;
+      }
+
+      ul {
+         display: block;
+      }
+   }
+
    ul {
       margin: 0;
       padding: 0;
@@ -426,24 +441,3 @@ a {
 }
 
 // product-list
-
-// drop-menu
-.dropdown-menu {
-
-   &.open {
-      .title {
-         display: inline-block;
-         width: 100px;
-         height: 20px;
-         font-size: 15px;
-         line-height: 20px;
-         cursor: pointer;
-      }
-
-      ul {
-         display: block;
-      }
-   }
-}
-
-// drop-menu
