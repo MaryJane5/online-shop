@@ -196,10 +196,11 @@
         }
     }
 }
+```
 
 #### js-скрипт:
 
-```script
+```js
 $('.login-modal .close_window, .overlay').click(function() {
         $('.login-modal, .overlay').css({ 'opacity': 0, 'visibility': 'hidden' });
     });
