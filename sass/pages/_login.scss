@@ -96,35 +96,36 @@
     }
 }
 
-form {
+.search-form {
     position: relative;
 }
 
-input[type='text'],
-input[type='password'] {
-    font: {
-        size: 14px;
-        weight: 500;
-    };
+.input-group {
+        font: {
+            size: 14px;
+            weight: 500;
+        };
 
-    width: 100%;
-    height: 56px;
-    padding: 0 0 0 27px;
+        width: 100%;
+        height: 56px;
+        padding: 0 0 0 27px;
 
-    letter-spacing: .7px;
-
-    color: $blue;
-    border: 0 solid transparent;
-    border-radius: 4px;
-    outline: none;
-    box-shadow: 0 1px 10px 0 rgba(124, 178, 64, .75);
-
-    &::placeholder {
-        font-size: 14px;
+        letter-spacing: .7px;
 
         color: $blue;
+        border: 0 solid transparent;
+        border-radius: 4px;
+        outline: none;
+        box-shadow: 0 1px 10px 0 rgba(124, 178, 64, .75);
+
+        &::placeholder {
+            font-size: 14px;
+
+            color: $blue;
+        }
     }
-}
+
+
 
 .search {
     font-size: 19px;
@@ -237,18 +238,15 @@ input[type='password'] {
         &:first-child {
             margin-bottom: 8px;
         }
-
-        input[type='text'],
-        input[type='password'] {
-            font-weight: 400;
-        }
     }
 
-    input {
+    .input-group {
+        font-weight: 400;
         height: 43px;
         padding: 0 0 0 41px;
 
         color: $white;
+        border: none;
         border-radius: 0;
         background: #76ae36;
 
