@@ -24,6 +24,34 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-th-list:before {
+  content: "\e912";
+}
+.icon-paper-plane:before {
+  content: "\e910";
+}
+.icon-pinterest-square:before {
+  content: "\e902";
+}
+.icon-youtube-square:before {
+  content: "\e90a";
+}
+.icon-twitter-square:before {
+  content: "\e90d";
+}
+.icon-grid:before {
+  content: "\e911";
+}
+
+.icon-left-arrow:before {
+  content: "\e904";
+}
+.icon-message:before {
+  content: "\e905";
+}
+.icon-notification:before {
+  content: "\e906";
+}
 .icon-attention:before {
   content: "\e901";
 }
@@ -60,15 +88,19 @@
 .icon-shopping-cart:before {
   content: "\e90f";
 }
+.icon-phone:before {
+  content: "\e942";
+}
+.icon-location2:before {
+  content: "\e948";
+}
+.icon-facebook2:before {
+  content: "\ea91";
+}
+.icon-linkedin:before {
+  content: "\eac9";
+}
 .icon-user:before {
   content: "\e900";
 }
-.icon-star-full:before {
-  content: "\e90d";
-}
-.icon-grid:before {
-  content: "\e902";
-}
-.icon-th-list:before {
-  content: "\e90a";
-}
+
