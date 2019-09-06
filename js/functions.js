@@ -67,7 +67,12 @@ $('select').each(function() {
         $list.hide();
     });
 
-    //modal-window start
+    
+
+});
+
+
+//modal-window start
     $('.login-modal .close_window, .overlay').click(function() {
         $('.login-modal, .overlay').css({ 'opacity': 0, 'visibility': 'hidden' });
     });
@@ -76,5 +81,3 @@ $('select').each(function() {
         e.preventDefault();
     });
     //modal-window end
-
-});
