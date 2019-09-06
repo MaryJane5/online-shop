@@ -209,3 +209,5 @@ $('.login-modal .close_window, .overlay').click(function() {
         e.preventDefault();
     });
 ```
+
+#### P.S: ссылке **Login** в теге нужно добавить класс **open_window**, иначе скрипт не будет отрабатывать.
