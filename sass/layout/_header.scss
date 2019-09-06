@@ -232,6 +232,7 @@
     align-items: center;
     justify-content: center;
     height: 100%;
+    flex-wrap: wrap;
 
     @include media ('>=tablet') {
         flex-direction: row;
@@ -244,6 +245,10 @@
         font-size: 14px;
 
         @include media ('>=tablet') {
+            margin: 0 20px 0 0;
+        }
+
+        @include media ('>=desktop') {
             margin: 0 35px 0 0;
         }
 
