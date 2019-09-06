@@ -48,7 +48,8 @@ $('select').each(function() {
     $styledSelect.click(function(e) {
         e.stopPropagation();
         $('div.select-styled.active').not(this).each(function() {
-            $(this).removeClass('active').next('ul.select-options').hide();po
+            $(this).removeClass('active').next('ul.select-options').hide();
+            po
         });
         $(this).toggleClass('active').next('ul.select-options').toggle();
     });
@@ -65,5 +66,15 @@ $('select').each(function() {
         $styledSelect.removeClass('active');
         $list.hide();
     });
+
+    //modal-window start
+    $('.login-modal .close_window, .overlay').click(function() {
+        $('.login-modal, .overlay').css({ 'opacity': 0, 'visibility': 'hidden' });
+    });
+    $('a.open_window').click(function(e) {
+        $('.login-modal, .overlay').css({ 'opacity': 1, 'visibility': 'visible' });
+        e.preventDefault();
+    });
+    //modal-window end
 
 });
