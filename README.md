@@ -1,6 +1,6 @@
 # online-shop
 **Модальное окно логинизации:**
-#### Вставляем код html в конце страницы
+#### Вставляем код html в конце страницы:
 ```html
 <div class="overlay"></div>
     <section class="login-modal">
@@ -30,7 +30,7 @@
             </a>
         </div>
 ```
-#### Стили
+#### Стили:
 ```scss
 .overlay {
     position: fixed;
@@ -197,7 +197,8 @@
     }
 }
 
-#### js-скрипт
+#### js-скрипт:
+
 ```script
 $('.login-modal .close_window, .overlay').click(function() {
         $('.login-modal, .overlay').css({ 'opacity': 0, 'visibility': 'hidden' });
