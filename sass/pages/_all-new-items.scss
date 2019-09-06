@@ -1,5 +1,3 @@
-// Maryna-start
-// bread-crumb
 .breadcrumb {
    padding: 30px 0 0;
    .breadcrumb-list {
@@ -49,7 +47,211 @@
     }
    }
  
-}
+     .col {
+       position: relative;
+       min-height: 1px;
+       padding: 0 15px 0 0;
+       width: 100%;
+       margin: 0 auto;
+ 
+       @include media ('>=tablet') {
+          width: 35%;
+       }
+ 
+       @include media ('>=1080px') {
+          width: 25%;
+       }
+      }
+ 
+       .ul {
+         @extend %listreset;
+     }
+   
+ }
+ 
+ .middle-section {
+     flex: 0 0 90%;
+     width: 100%;
+     margin: 0 -15px;
+ 
+     @include media ('>=tablet') {
+       width: 65%;
+       flex: 0 0 75%;
+       margin: 0 auto;
+    }
+ 
+    @include media ('>=1080px') {
+       width: 75%;
+       flex: 0 0 75%;
+       margin: 0 auto;
+    }
+ }
+ 
+ // sidebar-products
+ 
+ .sidebar-products {
+     width: 100%;
+     background-color: #fff;
+     border: solid 1px #dedede;
+     padding: 25px 30px;
+     margin-bottom: 30px;
+ 
+   .sidebar-products-title {
+     font-size: 20px;
+     font-weight: 700;
+     color: $dark-blue;
+     border-bottom: solid 1px #dedede;
+     padding-bottom: 20px;
+   }
+ 
+     li {
+       color: $dark-blue;
+       font-size: 14px;
+       padding-top: 20px;
+       justify-content: space-between!important;
+       display: flex!important;
+ 
+       .number {
+         color: #90a4ae;
+       }
+ 
+     }
+ }
+ 
+ .sidebar-products #list {
+   @extend %listreset;
+ 
+   li {
+     position: relative;
+     padding-top: 20px;
+     color: $dark-blue;
+     font-size: 14px;
+ 
+     &:before {
+       content: "\e904";
+       font-family: 'icomoon';
+       position: absolute;
+       left: 0;
+       top: 75%;
+       color: $green;
+       font-size: 10px;
+       transform: translateY(-50%) rotate(-180deg);
+     }
+ 
+     &:hover {
+       a {
+         color: darken($white, 30%);
+       }
+     }
+ 
+     a {
+       color: $dark-blue;
+     }
+   }
+ }
+ 
+ .sidebar-products ul span {
+     margin-left: 20px;
+ }
+ 
+ 
+ // different 
+ .d-flex {
+   display: flex;
+ }
+ 
+ .align-items-center {
+   align-items: center;
+ }
+ 
+ .flex-column {
+   flex-direction: column;
+ }
+ 
+ .justify-content-between {
+   justify-content: space-between;
+ }
+ 
+ #border-bottom-none {
+    border-bottom: none;
+ }
+ 
+ // card-start
+ 
+ .card {
+    border-radius: 0;
+    border-color: #d9e0e3;
+   
+     .card-img img {
+       height: auto;
+       width: 100%;
+     }
+ 
+     .card-item-title {
+       color: $dark-blue;
+       font-weight: 700;
+       font-size: 16px;
+       padding-bottom: 10px;
+     }
+ 
+     .card-info{
+       border: none;
+       padding: 20px 0 0 0;
+     }
+   
+     .card-item-category {
+         color: $green;
+         font-weight: 500;
+         font-size: 14px;
+     }
+ 
+       .card-price {
+         color: $white;
+         font-weight: 700;
+         font-size: 16px;
+         margin-left: auto!important;
+       }
+   
+ }
+ 
+ .card {
+   .card-author {
+     display: flex;
+     position: relative;
+     padding: 20px 0 29px;
+     border-bottom: 1px solid #d9e0e3;
+ 
+     .author-name {
+       color: #546e7a;
+       font-weight: 500;
+       font-size: 14px;
+       padding-left: 12px;
+       margin-left: 0;
+     }
+ 
+       .round-img {
+          width: 30px;
+          height: 30px;
+          border-radius: 50%;
+          overflow: hidden;
+          // position: absolute;
+          // left: 15px;
+          // transform: translateY(-50%);
+          // top: 50%;
+       }
+ 
+       .rating {
+          width: 50%;
+          display: flex;
+          align-items: center;
+          color: $green;
+       }
+     }
+ }
+ 
+ // card-end Maryna-end
+ 
+ 
  // Dima-start
  
  a {
