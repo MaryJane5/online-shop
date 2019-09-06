@@ -259,7 +259,6 @@
 
 }
 
-
 .nav-active {
     .nav-opener {
 
@@ -269,9 +268,17 @@
             background-color: $white;
         }
 
-    }
-}
+        a {
+            display: block;
+            color: $white;
 
+            &:hover {
+                color: darken($white, 30%);
+            }
+        }
+    }
+
+}
 
 // burger-menu
 .nav-opener {
