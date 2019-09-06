@@ -1,0 +1,87 @@
+.autor-banner-wrapper {
+
+    @include media ('>=tablet') {
+        width: 1106px;
+        height: 440px;
+        background-color: #b5b5b5;
+        display: table-cell;
+        vertical-align: middle;
+    }
+}
+
+
+.autor-banner-content {
+    width: 100%;
+    padding: 50px;
+    background-color: $green;
+
+    @include media ('>=tablet') {
+        width: 652px;
+        height: 218px;
+        margin: auto;
+        background-color: $green;
+        display: flex;
+        align-items: center;
+        padding: 0 57px;
+    }
+}
+
+.autor-banner-title {
+    display: none;
+
+    @include media ('>=tablet') {
+        display: block;
+        width: 58%;
+        padding: 0 23px 0 0;
+    }
+
+    strong {
+
+        @include media ('>=tablet') {
+            font-size: 30px;
+            font-weight: 400;
+            color: #fff;
+        }
+
+        span {
+            @include media ('>=tablet') {
+                font-weight: 700;
+            }
+        }
+    }
+}
+
+.autor-banner-btn {
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+
+    @include media ('>=tablet') {
+        width: 42%;
+    }
+
+    a {
+        padding: 18px 5px;
+        font-size: 18px;
+        font-weight: 400;
+        border: 2px solid #ffffff;
+        color: #263238;
+        background-color: #fff;
+        transition: all 0.3s ease-out;
+        display: block;
+        text-transform: capitalize;
+
+        @include media ('>=tablet') {
+
+            padding: 18px 40px;
+
+        }
+
+
+        &:hover {
+            background: transparent;
+            color: #ffffff;
+            background-color: $green;
+        }
+    }
+}
