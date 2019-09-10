@@ -255,14 +255,18 @@
         }
     }
 
-    label::before {
-        font-size: 14px;
+    label {
+        cursor: auto;
 
-        position: absolute;
-        top: 14px;
-        left: 18px;
+        &::before {
+            font-size: 14px;
 
-        color: $white;
+            position: absolute;
+            top: 14px;
+            left: 18px;
+
+            color: $white;
+        }
     }
 }
 
