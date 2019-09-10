@@ -1,7 +1,7 @@
 @import 'vendors/include-media';
 @import 'vendors/breakpoints_media-expressions';
 @import 'vendors/normalize';
-// @import 'vendors/icomoon';
+@import 'vendors/icomoon';
 
 @import 'base/variables';
 @import 'base/mixins';
@@ -11,7 +11,7 @@
 @import 'base/forms';
 
 @import 'layout/header';
-// @import 'layout/footer';
+@import 'layout/footer';
 
 @import 'pages/homepage';
 
@@ -22,6 +22,7 @@
 @import 'components/pagination';
 @import 'components/bread-crumbs';
 @import 'components/range-filter';
+@import 'components/form';
 
 
 

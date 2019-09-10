@@ -77,7 +77,7 @@
                     <!-- form-part-first -->
                     <div class="form-part-first">
                         <div class="input-wrapper">
-                            <label for="select-categories">Select Categories</label>
+                            <div class="label-wrapper"><label for="select-categories">Select Categories</label></div>
                             <!-- custom-select -->
                             <select id="select-categories">
                                 <option value="hide"> Select </option>
@@ -93,24 +93,41 @@
                             </select>
                         </div>
                         <div class="input-wrapper">
-                            <label for="user-name">Product Name</label>
+                            <div class="label-wrapper">
+                                <label for="user-name">Product Name</label>
+                            </div>
                             <input type="text" placeholder="Enter your product name here..." id="user-name">
                         </div>
-                        <div class="input-wrapper">
-                            <label for="user-description">Product Description</label>
-                            <input type="text" placeholder="<h1> Type your text  here </h1/>"
-                                id="user-description">
+                        <div class="input-wrapper textarea-wrapper">
+                            <div class="label-wrapper">
+                                <label for="user-description">Product Description</label>
+                            </div>
+                            <textarea name="#" id="user-description" cols="30" rows="10">
+                            </textarea>
+                        </div>
+                         <div class="input-wrapper">
+                            <div class="label-wrapper">
+                               <span>Upload Main File</span>
+                            </div>
+                             <label for="upload-file">Upload Main File</label>
+                            <input type="file" id="upload-file" placeholder="Enter your product name here...">
                         </div>
                         <div class="input-wrapper">
-                            <label for="user-upload-file">Upload Main File</label>
+                            <div class="label-wrapper">
+                                <label for="user-upload-file">Upload Main File</label>
+                            </div>
                             <input type="text" placeholder="No File Choosen" id="user-upload-file">
                         </div>
                         <div class="input-wrapper">
-                            <label for="user-upload-screenshot">Upload Screenshots</label>
+                            <div class="label-wrapper">
+                                <label for="user-upload-screenshot">Upload Screenshots</label>
+                            </div>
                             <input type="text" placeholder="No File Choosen" id="user-upload-screenshot">
                         </div>
                         <div class="input-wrapper">
-                            <label for="file-included">File Included</label>
+                            <div class="label-wrapper">
+                                <label for="file-included">File Included</label>
+                            </div>
                             <!-- custom-select -->
                             <select id="file-included">
                                 <option value="hide">Select File Type </option>
@@ -127,23 +144,31 @@
                         </div>
                     </div>
                     <div class="input-wrapper">
-                        <label for="user-file-dimension">File Dimensions</label>
+                        <div class="label-wrapper">
+                            <label for="user-file-dimension">File Dimensions</label>
+                        </div>
                         <input type="text" placeholder="Enter the item  dimentionss here ..." id="user-file-dimension">
                     </div>
                     <div class="input-wrapper">
-                        <label for="user-item-tag">Item Tags</label>
+                        <div class="label-wrapper">
+                            <label for="user-item-tag">Item Tags</label>
+                        </div>
                         <input type="text" placeholder="Enter Tag Here" id="user-item-tag">
                     </div>
                     <h2>Set Your Price (US$)</h2>
                     <!-- form-part-second -->
                     <div class="form-part-second">
                         <div class="input-wrapper">
-                            <label for="user-regular-license">Regular License</label>
+                            <div class="label-wrapper">
+                                <label for="user-regular-license">Regular License</label>
+                            </div>
                             <input type="text" placeholder="$00.00" id="user-regular-license">
                         </div>
                     </div>
                     <div class="input-wrapper">
-                        <label for="user-extended-license">Extended License</label>
+                        <div class="label-wrapper">
+                            <label for="user-extended-license">Extended License</label>
+                        </div>
                         <input type="text" placeholder="$00.00" id="user-extended-license">
                     </div>
                     <input type="submit" value="SUBMIT" class="submit-button">
