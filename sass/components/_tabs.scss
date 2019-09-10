@@ -81,11 +81,18 @@
     ul{
         display: flex;
         flex-wrap: wrap;
-        max-height: 360px;
+
+        @include media ('>=600px') {
+            max-height: 360px;
+        }
 
 
         li{
-            width: 50%;
+            width: 100%;
+
+            @include media ('>=600px') {
+                width: 50%;
+            }
         }
     }
 }
