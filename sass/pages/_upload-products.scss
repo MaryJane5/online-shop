@@ -1,27 +1,69 @@
 .upload-products-form-outer {
-	.container {
-		background-color: red;
-		padding: 0;
-	}
+
+    .container {
+        background-color: #fff;
+        padding: 22px 45px 67px 45px;
+        border: 1px solid #f2f2f2;
+
+        h2 {
+            border-bottom: 1px solid #f2f2f2;
+            padding: 0 0 25px 0;
+        }
+
+    }
+
 }
 
+.form-part-first {
+    padding: 0 0 75px 0;
+}
 
 .upload-products-form {
 
     .input-wrapper {
         display: flex;
         align-items: center;
-        margin: 0 0 21px;
+        margin: 0 0 23px;
 
         label {
-            width: 10%;
+            width: 15%;
             margin: 0 30px 0 0;
         }
 
         input[type="text"],
         input[type="email"],
         input[type="password"] {
-            width: 90%;
+            width: 85%;
+
+            #user-decription{
+                height: 150px;
+            }
         }
+    }
+}
+
+
+.submit-button {
+    border: none;
+}
+
+.form-part-first {
+    padding: 0;
+}
+
+label {
+    position: relative;
+    margin: 0 0 10px;
+    padding: 0 0 0 20px;
+
+    &:before {
+        content: "\e904";
+        font-family: 'icomoon';
+        position: absolute;
+        left: 156px;
+        top: 50%;
+        color: $green;
+        font-size: 12px;
+        transform: translateY(-50%) rotate(-180deg);
     }
 }
