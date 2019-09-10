@@ -26,12 +26,13 @@
      .col {
          position: relative;
          min-height: 1px;
-         padding: 0 15px 0 0;
+         padding: 0 15px  0;
          width: 100%;
          margin: 0 auto;
 
          @include media ('>=tablet') {
              width: 35%;
+             padding: 0 15px 0 0;
          }
 
          @include media ('>=1080px') {
@@ -46,7 +47,6 @@
  }
 
  .middle-section {
-     flex: 0 0 90%;
      width: 100%;
      margin: 0 -15px;
 
@@ -423,9 +423,13 @@
      .row-products-filter {
          display: flex;
          flex-wrap: wrap;
-         justify-content: space-between;
-         margin: 0 -16px -18px;
+         margin: 0 -15px -15px;
          align-items: stretch;
+         justify-content: flex-start;
+         @include media ('>=tablet') {
+           justify-content: space-between;
+  
+        }
      }
 
      .col-product-filter {
