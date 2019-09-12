@@ -33,20 +33,36 @@
     }
 
     &.btn-small {
-    	width: 72px;
-    	font-size: 12px;
-    	padding: 10px 5px;
+        width: 72px;
+        font-size: 12px;
+        padding: 10px 5px;
     }
 }
 
-.btn-register, .btn-login  {
-	border-radius: 3px;
+.btn-register,
+.btn-login {
+    border-radius: 3px;
 
 }
 
+// section-search
+.section-search {
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
 
+    h1 {
+        @include media ('>=tablet') {
+            font-size: 48px;
+            font-weight: 700;
+            color: $white;
+            text-align: center;
+        }
+    }
 
-
-
-
-
+    p {
+            max-width: 800px;
+            margin: 0 auto 30px;
+            text-align: center;
+        }
+}
