@@ -32,11 +32,12 @@
 
          @include media ('>=tablet') {
              width: 35%;
-             padding: 0 15px 0 0;
+             padding: 0;
          }
 
          @include media ('>=1080px') {
              width: 25%;
+             padding: 0 15px 0 0;
          }
      }
 
@@ -130,6 +131,10 @@
      margin-left: 20px;
  }
 
+.sidebar-products .card {
+    margin: 27px 0 0;
+}
+
 
  // different 
  .d-flex {
@@ -151,6 +156,14 @@
  #border-bottom-none {
      border-bottom: none;
  }
+
+ #border-bottom {
+     border-bottom: none;
+ }
+
+ .btn.btn-green i {
+    padding-right: 10px;
+}
 
  // card-start
 
@@ -225,10 +238,7 @@
      }
  }
 
- // card-end Maryna-end
-
-
- // Dima-start
+ // card-end 
 
  a {
      text-decoration: none;
@@ -706,5 +716,3 @@
          margin: 0 auto;
      }
  }
-
- // Dima-end
