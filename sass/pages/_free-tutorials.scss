@@ -1,0 +1,75 @@
+.free-tutorials {
+    background-color: $white;
+}
+
+.free-tutorials__title {
+    font-size: 24px;
+    line-height: 1.6;
+    color: $dark-blue;
+    text-align: center;
+    font-weight: 700;
+    margin: 0 0 25px;
+
+    @include media ('>=tablet') {
+        margin: 0 0 55px;
+        font-size: 36px;
+    }
+}
+
+.free-tutorials__row {
+
+    @include media ('>=tablet') {
+        display: flex;
+        justify-content: space-between;
+        margin: 0 -15px;
+    }
+
+    .free-tutorials__col {
+        width: 100%;
+        padding: 0 10px;
+        margin: 10px auto;
+
+        @include media ('>=tablet') {
+            width: 33.31%;
+            padding: 0 10px;
+        }
+
+        .free-tutorials__item {
+            display: block;
+            background-color: #f8f8f8;
+            text-align: center;
+            width: 100%;
+            opacity: 0.8;
+            color: $dark-blue;
+
+            &:hover {
+                opacity: 1;
+                transition: all 0.3s ease;
+                color: $green;
+            }
+
+            .free-tutorial__img {
+                height: 270px;
+                max-width: 370px;
+                width: 100%;
+                background-size: cover;
+                background-position: 50%, 50%;
+                background-repeat: no-repeat;
+            }
+
+            .free-tutorial__item-title {
+                display: block;
+                font-size: 18px;
+                font-weight: 700;
+                padding: 20px 15px;
+
+
+                @include media ('>=tablet') {
+                    font-size: 24px;
+                    padding: 40px 15px;
+
+                }
+            }
+        }
+    }
+}
