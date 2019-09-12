@@ -26,12 +26,14 @@
      .col {
          position: relative;
          min-height: 1px;
-         padding: 0 15px 0 0;
+         padding: 0 15px  0;
          width: 100%;
          margin: 0 auto;
 
          @include media ('>=tablet') {
              width: 35%;
+             padding: 0 15px  0;
+             
          }
 
          @include media ('>=1080px') {
@@ -46,19 +48,16 @@
  }
 
  .middle-section {
-     flex: 0 0 90%;
      width: 100%;
      margin: 0 -15px;
 
      @include media ('>=tablet') {
          width: 65%;
-         flex: 0 0 75%;
          margin: 0 auto;
      }
 
      @include media ('>=1080px') {
          width: 75%;
-         flex: 0 0 75%;
          margin: 0 auto;
      }
  }
