@@ -86,9 +86,9 @@ $(function() {
 
     selectList.on("click", function(event) {
         event.preventDefault();
-        $(".icon-th-list").toggleClass("active-select");
-        $(".icon-grid").removeClass("active-select");
-        $(".products-grid").toggleClass("product-list");
+        $(".fa-th-list").addClass("active-select");
+        $(".fa-th-large").removeClass("active-select");
+        $(".products-grid").addClass("product-list");
     });
 
 });
@@ -100,8 +100,8 @@ $(function() {
 
     selectGrid.on("click", function(event) {
         event.preventDefault();
-        $(".icon-grid").toggleClass("active-select");
-        $(".icon-th-list").removeClass("active-select");
+        $(".fa-th-large").addClass("active-select");
+        $(".fa-th-list").removeClass("active-select");
         $(".products-grid").removeClass("product-list");
     });
 

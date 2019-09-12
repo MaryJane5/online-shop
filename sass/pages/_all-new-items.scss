@@ -273,10 +273,10 @@
 
          i {
              color: #90a4ae;
-             font-size: 22px;
+             font-size: 16px;
 
 
-             &.icon-grid.active-select {
+             &.fa-th-large.active-select {
                  color: $green;
              }
          }
@@ -298,7 +298,7 @@
              color: #90a4ae;
              font-size: 15px;
 
-             &.icon-th-list.active-select {
+             &.fa-th-list.active-select {
                  color: $green;
              }
          }
@@ -374,20 +374,13 @@
          display: none;
 
          li.list-filter {
-             background: #fff;
              height: 35px;
              list-style: none;
              margin: 0;
              padding: 0;
-             border-bottom: 1px solid $black;
 
              &::before {
                  display: none;
-             }
-
-             &:hover {
-                 background: #CCCCCC;
-                 color: $black;
              }
 
              a {
@@ -395,10 +388,16 @@
                  width: 100%;
                  text-decoration: none;
                  font-size: 15px;
-                 color: #000;
+                 color: $black;
+                 background: $white;
                  align-items: center;
                  justify-content: center;
                  height: 100%;
+
+                 &:hover {
+                    background: $black;
+                    color: $white;
+                }
              }
          }
      }
@@ -423,7 +422,7 @@
      .row-products-filter {
          display: flex;
          flex-wrap: wrap;
-         justify-content: space-between;
+         justify-content: flex-start;
          margin: 0 -16px -18px;
          align-items: stretch;
      }
@@ -439,8 +438,6 @@
 
          @include media ('>=tablet') {
              width: 50%;
-             margin: 0 auto;
-
          }
 
          @include media ('>=1080px') {
@@ -645,6 +642,7 @@
          .product-price {
              position: static;
              font-size: 10px;
+             display: block;
 
              @include media ('>=phone') {
                  font-size: 13px;
