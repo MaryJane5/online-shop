@@ -24,6 +24,24 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-asterisk:before {
+  content: "\e913";
+}
+.icon-th-list:before {
+  content: "\e912";
+}
+.icon-paper-plane:before {
+  content: "\e910";
+}
+.icon-pinterest-square:before {
+  content: "\e902";
+}
+.icon-youtube-square:before {
+  content: "\e90a";
+}
+.icon-twitter-square:before {
+  content: "\e90d";
+}
 .icon-attention:before {
   content: "\e901";
 }
@@ -60,6 +78,9 @@
 .icon-shopping-cart:before {
   content: "\e90f";
 }
+.icon-grid:before {
+  content: "\e911";
+}
 .icon-user:before {
   content: "\e900";
 }
@@ -75,30 +96,9 @@
 .icon-linkedin:before {
   content: "\eac9";
 }
-.icon-facebook:before {
-  content: "\ea90";
+.icon-search:before {
+  content: "\e986";
 }
-.icon-twitter:before {
-  content: "\ea96";
-}
-.icon-linkedin2:before {
-  content: "\eaca";
-}
-.icon-pinterest2:before {
-  content: "\ead2";
-}
-.icon-paper-plane:before {
-  content: "\e910";
-}
-.icon-pinterest-square:before {
-  content: "\e902";
-}
-.icon-youtube-square:before {
-  content: "\e90a";
-}
-.icon-twitter-square:before {
-  content: "\e90d";
-}
-.icon-heart-o:before {
-  content: "\e911";
+.icon-star-full:before {
+  content: "\e9d9";
 }

@@ -2,6 +2,7 @@
 @import 'vendors/breakpoints_media-expressions';
 @import 'vendors/normalize';
 @import 'vendors/icomoon';
+@import 'vendors/slick';
 
 @import 'base/variables';
 @import 'base/mixins';
@@ -28,6 +29,7 @@
 @import 'components/bread-crumbs';
 @import 'components/range-filter';
 @import 'components/form';
+@import 'components/login-popup';
 
 
 
