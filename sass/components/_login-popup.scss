@@ -1,17 +1,157 @@
 .login-popup {
-    display: none;
-    max-width: 500px;
-    height: 200px;
-    background-color: $green;
     position: absolute;
+    z-index: 9999;
     top: 50%;
     left: 50%;
+    display: none;
+    width: 100%;
+    max-width: 730px;
+    height: 485px;
+    padding: 85px 15px;
     transform: translate(-50%, -50%);
-    z-index: 2;
+    background-color: $green;
+    box-shadow: 0 0 50px 20px rgba(0,0,0,.5);
+
+    @include media ('<=phone') {
+        height: 100vh;
+    }
+}
+
+.modal-content {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+
+    .close {
+        font-size: 24px;
+        font-weight: 700;
+        position: absolute;
+        top: 13px;
+        right: 21px;
+        cursor: pointer;
+        color: $white;
+        border: none;
+        background: transparent;
+
+        @include media ('<=phone') {
+            top: auto;
+            bottom: 13px;
+        }
+    }
+
+    .login-title {
+        font-size: 48px;
+        font-weight: 700;
+        margin: 0;
+        padding: 0 0 30px;
+        text-align: center;
+        text-transform: uppercase;
+        color: $white;
+    }
+
+    a {
+        font-size: 18px;
+        color: $white;
+
+        @include media ('<=phone') {
+            display: block;
+            max-width: 100%;
+            text-align: center;
+        }
+    }
+}
+
+.login-form {
+    .form-shell {
+        position: relative;
+
+        &:first-child {
+            margin-bottom: 8px;
+        }
+    }
+
+    label::before {
+        font-size: 14px;
+        position: absolute;
+        top: 15px;
+        left: 18px;
+        cursor: auto;
+        color: $white;
+    }
+
+    input[type=text],
+    input[type=password] {
+        font-weight: 400;
+        width: 100%;
+        height: 43px;
+        padding: 0 0 0 41px;
+        color: $white;
+        border: none;
+        border-radius: 0;
+        outline: none;
+        background: #76ae36;
+
+        &::placeholder {
+            color: $white;
+        }
+    }
+}
+
+.form-submit {
+    display: flex;
+    margin: 19px 0 24px;
+    align-items: center;
+    justify-content: space-between;
+
+    @include media ('<=phone') {
+        flex-wrap: wrap;
+    }
+
+    input[type=submit] {
+        font-size: 14px;
+        font-weight: 700;
+        width: 100%;
+        max-width: 139px;
+        height: 48px;
+        text-transform: uppercase;
+        color: $black;
+        border: none;
+        outline: none;
+        background: $white;
+        box-shadow: 0 2px 2px 0 rgba(118, 174, 54, .75);
+
+        @include media ('<=phone') {
+            max-width: 100%;
+            margin: 0 0 50px;
+        }
+    }
+
+    a {
+        width: 100%;
+        max-width: 250px;
+        padding: 15px 0;
+        text-align: center;
+        border-radius: 0;
+        background: #76ae36;
+
+        @include media ('<=phone') {
+            max-width: 100%;
+        }
+
+        &:hover {
+            background-color: #95c85a;
+        }
+
+        i {
+            margin-right: 5px;
+
+            vertical-align: middle;
+        }
+    }
 }
 
 .show-popup {
-	position: relative;
+    position: relative;
     overflow: hidden;
     max-height: 100vh;
 
@@ -20,13 +160,13 @@
     }
 
     &:before {
-        content: "";
         position: absolute;
-        left: 0;
-        right: 0;
+        z-index: 9998;
         top: 0;
+        right: 0;
         bottom: 0;
-        background-color: rgba(0, 0, 0, 0.8);
-        z-index: 1;
+        left: 0;
+        content: '';
+        background-color: rgba(0, 0, 0, .8);
     }
 }

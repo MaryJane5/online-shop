@@ -10,6 +10,7 @@ $('.tab').click(function (event) {
 
 });
 
+//login-popup start
 $(document).ready(function() {
 
     $(".btn-login").click(function() {
@@ -17,6 +18,7 @@ $(document).ready(function() {
     });
 
 });
+//login-popup end
 
 $(document).ready(function() {
 
