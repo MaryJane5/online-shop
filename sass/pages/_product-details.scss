@@ -244,8 +244,9 @@
     }
 
     ul {
+
         @include media(">=tablet") {
-            display: flex;
+            display: flex!important;
             flex-wrap: wrap;
             max-height: 360px;
             margin: 0;
@@ -253,9 +254,6 @@
             transition: all .3s ease;
             display: none;
             padding: 20px 20px;
-            border-bottom: 1px solid $gray;
-            border-left: 1px solid $gray;
-            border-right: 1px solid $gray;
             max-width: 870px;
             padding: 36px 30px;
         }
