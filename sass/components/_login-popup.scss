@@ -32,11 +32,6 @@
         color: $white;
         border: none;
         background: transparent;
-
-        @include media ('<=phone') {
-            top: auto;
-            bottom: 13px;
-        }
     }
 
     .login-title {
